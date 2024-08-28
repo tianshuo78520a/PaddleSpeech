@@ -1,6 +1,11 @@
 function main(){
   speech_ci_path=`pwd`
 
+  echo "Start cli"
+  cd ${speech_ci_path}/cli
+  source path.sh
+  bash test_cli.sh
+  echo "End cli"
 
   echo "Start asr"
   cd ${speech_ci_path}/asr
@@ -21,12 +26,6 @@ function main(){
   cd ${speech_ci_path}/vector
   python test_augment.py
   echo "End Vector"
-
-  echo "Start cli"
-  cd ${speech_ci_path}/cli
-  source path.sh
-  bash test_cli.sh
-  echo "End cli"
 }
 
 main
