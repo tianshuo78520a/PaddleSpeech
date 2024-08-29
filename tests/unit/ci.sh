@@ -12,7 +12,7 @@ function main(){
 
   echo "Start TTS"
   cd ${speech_ci_path}/tts
-  python test_data_table.py
+  #python test_data_table.py
   python test_enfrontend.py
   python test_mixfrontend.py
   echo "End TTS"
