@@ -1,4 +1,5 @@
 function main(){
+  set -ex
   speech_ci_path=`pwd`
 
   echo "Start asr"
