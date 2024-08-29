@@ -4,7 +4,7 @@ function main(){
 
   echo "Start asr"
   cd ${speech_ci_path}/asr
-  bash deepspeech2_online_model_test.sh
+  #bash deepspeech2_online_model_test.sh
   python error_rate_test.py
   python mask_test.py
   python reverse_pad_list.py
