@@ -4,7 +4,7 @@ function main(){
 
   echo "Start asr"
   cd ${speech_ci_path}/asr
-  #bash deepspeech2_online_model_test.sh
+  bash deepspeech2_online_model_test.sh
   python error_rate_test.py
   python mask_test.py
   python reverse_pad_list.py
@@ -12,7 +12,7 @@ function main(){
 
   echo "Start TTS"
   cd ${speech_ci_path}/tts
-  #python test_data_table.py
+  python test_data_table.py
   python test_enfrontend.py
   python test_mixfrontend.py
   echo "End TTS"
